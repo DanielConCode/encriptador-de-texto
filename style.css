@@ -1,0 +1,98 @@
+.imagen-logo{
+    width: 180px;
+    height: 90px;
+    margin: 2em;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    height: 1024px;
+}
+
+main{
+    display: flex;
+}
+
+.imagen-texto{
+    width: 12px;
+    height: 12px;
+}
+
+.division-texto-procesar{
+    margin-left: 5em;
+    margin-right: 3em;
+}
+
+.input-texto-procesar::placeholder, .input-texto-procesar{
+    color: #0A3871;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+textarea{
+    background: none;
+    border: none;
+    display: block; /* el TEXTAREA no es un bloque en si, por lo que para aplicar margin y pading se utiliza la propiedad display: Block*/
+    margin: 1.5em auto;
+    outline: none; /* elimina la linea del borde al clickear en los textareas*/
+}
+
+.input-texto-procesar{
+    position: absolute;
+    left: 215px;
+}
+
+.pantalla-resultados{
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 548px;
+    right: 40px;
+    top: 40px;
+    border-radius: 32px;
+}
+
+.imagen-pantalla-resultados{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+button{
+    border-radius: 24px;
+    font-weight: bold;
+    border-color: #0A3871;
+    width: 328px;
+    height: 67px;
+    margin-left: 1em;
+}
+
+h1{ /* Etiqueta del texto "Solo letras minusculas y sin acentos" */
+    margin: 1em 2em;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.botones{
+    display: block;
+    position: absolute;
+    bottom: 72px;
+    left: 200px
+}
+
+.boton-encriptar{
+    color: #E5E5E5;
+    background-color: #0A3871;
+}
+
+.boton-desencriptar{
+    background: none;
+}
+
+.boton-copiar{
+    background: none;
+}
