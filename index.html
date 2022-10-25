@@ -20,15 +20,17 @@
             <textarea class="input-texto-procesar"cols="50" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div class="botones">
                 <h1><img src="imagenes/interrogacion.png" class="imagen-texto" alt="!"> Solo letras minusculas y sin acentos</h1>
-                <button class="boton-encriptar">Encriptar</button>
-                <button class="boton-desencriptar">Desencriptar</button>
+                <button class="boton-encriptar" onclick="Encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="Desencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="pantalla-resultados">
-            <img class="imagen-pantalla-resultados" src="imagenes/dibujo.png" alt="imagen-detective">
-            <textarea cols="30" rows="10"></textarea>
-            <button class="boton-copiar">Copiar</button>
+            <textarea readonly class="input-mensaje-mostrar" cols="30" rows="10"></textarea>
+            <h1 class="no-resultados">Ningún mensaje fue encontrado </h1>
+            <p class="texto-pantalla">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton-copiar" onclick="Copiar()">Copiar</button>
         </section> 
     </main>
 </body>
+<script src="script.js"></script>
 </html>

@@ -24,7 +24,7 @@ main{
     margin-right: 3em;
 }
 
-.input-texto-procesar::placeholder, .input-texto-procesar{
+.input-texto-procesar::placeholder, .input-texto-procesar, .input-mensaje-mostrar{
     color: #0A3871;
     font-size: 24px;
     font-weight: 200;
@@ -36,6 +36,7 @@ textarea{
     display: block; /* el TEXTAREA no es un bloque en si, por lo que para aplicar margin y pading se utiliza la propiedad display: Block*/
     margin: 1.5em auto;
     outline: none; /* elimina la linea del borde al clickear en los textareas*/
+    resize: none;
 }
 
 .input-texto-procesar{
@@ -54,14 +55,6 @@ textarea{
     border-radius: 32px;
 }
 
-.imagen-pantalla-resultados{
-    width: 250px;
-    height: 250px;
-    display: block;
-    margin: auto;
-    margin-top: 10%;
-}
-
 button{
     border-radius: 24px;
     font-weight: bold;
@@ -77,11 +70,36 @@ h1{ /* Etiqueta del texto "Solo letras minusculas y sin acentos" */
     font-size: 12px;
 }
 
+.input-mensaje-mostrar{
+    background-image: url(imagenes/dibujo.png);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 200px;
+    height: 250px;
+    width: 250px;
+    margin-top: 60px;
+}
+
+.no-resultados{
+    font-size: 18px;
+    color: #0A3871;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.texto-pantalla{
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    width: 220px;
+    margin: 1em auto;
+}
+
 .botones{
     display: block;
     position: absolute;
     bottom: 72px;
-    left: 200px
+    left: 90px
 }
 
 .boton-encriptar{
@@ -95,4 +113,7 @@ h1{ /* Etiqueta del texto "Solo letras minusculas y sin acentos" */
 
 .boton-copiar{
     background: none;
+    position: relative;
+    display: none;
+    margin-top: 70px;
 }
